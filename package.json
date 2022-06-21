@@ -20,7 +20,8 @@
     "lint:js:fix": "eslint . --fix",
     "start": "ember serve",
     "test": "npm-run-all lint test:*",
-    "test:ember": "ember test"
+    "test:ember": "ember test",
+    "deploy": "ember build --environment production && ember github-pages:commit --message \"Deploy gh-pages\" && git push origin gh-pages:gh-pages"
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
