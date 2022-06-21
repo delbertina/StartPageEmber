@@ -4,7 +4,7 @@ module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'delbertina-startpage',
     environment,
-    rootURL: '/',
+    rootURL: '/StartPageEmber/',
     locationType: 'history',
     EmberENV: {
       FEATURES: {
@@ -29,6 +29,7 @@ module.exports = function (environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.rootURL = '/';
   }
 
   if (environment === 'test') {
