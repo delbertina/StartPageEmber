@@ -120,7 +120,7 @@ p {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  > div {
+  > div, a {
     margin: 12px;
     padding: 4px;
     border: lightgray 1px solid;
