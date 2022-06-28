@@ -1,6 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,700italic);
 
 /**
+ * Theme
+ * purple #461E52
+ * pink #DD517F
+ * yellow #E68E36
+ * blue #556DC8
+ * light blue #7998EE
+ * grey #2c2e2b
+ */
+
+/**
  * Base Elements
  */
 
@@ -23,14 +33,15 @@ a,
 button {
   font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
   line-height: 1.5;
+  color: white;
 }
 
 body {
-  background: #f3f3f3;
+  background: #343633;
 }
 
 a {
-  color: #016aba;
+  color: #556DC8;
   text-decoration: none;
 }
 
@@ -51,7 +62,7 @@ p {
   padding: 10px 30px 10px;
   text-decoration: none;
   color: #fff;
-  background: #016aba;
+  background: #7998EE;
   border-radius: 5px;
   border: none;
   font-size: 20px;
@@ -77,7 +88,7 @@ p {
 
 .jumbo {
   padding: 50px;
-  background: #f6f6f6;
+  background: #40423e;
 }
 
 .jumbo h2 {
@@ -123,7 +134,7 @@ p {
   > div, a {
     margin: 12px;
     padding: 4px;
-    border: lightgray 1px solid;
+    border: #461E52 2px solid;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -131,9 +142,10 @@ p {
       margin-right: 8px;
     }
     &:hover {
+      color: white;
       cursor: pointer;
-      border: white 1px solid;
-      background:rgba(136, 136, 136, 0.158);
+      border: #DD517F 2px solid;
+      background:rgba(235, 235, 235, 0.158);
     }
   }
 }
