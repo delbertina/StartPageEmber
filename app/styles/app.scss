@@ -41,7 +41,6 @@ body {
 }
 
 a {
-  color: #556DC8;
   text-decoration: none;
 }
 
@@ -138,18 +137,34 @@ p {
   > div, a {
     margin: 12px;
     padding: 4px;
-    border: #461E52 2px solid;
     border-radius: 5px;
     display: flex;
     align-items: center;
+    background-color: #2c2e2b;
+    color: #374683;
     > :first-child {
       margin-right: 8px;
     }
     &:hover {
-      color: white;
+      color: rgb(141, 144, 253);
       cursor: pointer;
-      border: #DD517F 2px solid;
+      border: #583642 2px solid;
       background:rgba(235, 235, 235, 0.158);
     }
+  }
+}
+.button-list-1 {
+  a {
+    border: #301e52 2px solid;
+  }
+}
+.button-list-2 {
+  a {
+    border: #231e52 2px solid;
+  }
+}
+.button-list-3 {
+  a {
+    border: #1e2652 2px solid;
   }
 }
