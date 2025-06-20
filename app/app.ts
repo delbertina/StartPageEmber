@@ -1,7 +1,7 @@
 import Application from '@ember/application';
 import Resolver from 'ember-resolver';
 import loadInitializers from 'ember-load-initializers';
-import config from 'delbertina-startpage/config/environment';
+import config from './config/environment';
 import { importSync, isDevelopingApp, macroCondition } from '@embroider/macros';
 import './font-awesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
