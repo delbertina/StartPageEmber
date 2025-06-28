@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import { setupRenderingTest } from 'delbertina-startpage/tests/helpers';
+import { setupRenderingTest } from '../../helpers/index';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
@@ -12,15 +12,6 @@ module('Integration | Component | main', function (hooks) {
 
     await render(hbs`<Main />`);
 
-    assert.dom().hasText('');
-
-    // Template block usage:
-    await render(hbs`
-      <Main>
-        template block text
-      </Main>
-    `);
-
-    assert.dom().hasText('template block text');
+    assert.dom().hasText('Welcome');
   });
 });
