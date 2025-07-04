@@ -8,6 +8,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import * as freeBrandIcons from '@fortawesome/free-brands-svg-icons';
 import * as freeRegularIcons from '@fortawesome/free-regular-svg-icons';
 import * as freeSolidIcons from '@fortawesome/free-solid-svg-icons';
+import '@glint/environment-ember-loose';
 
 if (macroCondition(isDevelopingApp())) {
   importSync('./deprecation-workflow');
