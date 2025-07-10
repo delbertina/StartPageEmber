@@ -6,3 +6,9 @@ export interface ListItemObject {
   icon: IconName | IconLookup | IconDefinition;
   iconPrefix: IconPrefix;
 }
+
+export interface ButtonListObject {
+  title: string;
+  items: ListItemObject[];
+  listClasses: string;
+}
