@@ -1,10 +1,12 @@
 import Component from '@glimmer/component';
 import type { ListItemObject } from 'types';
 
-export interface ListItemSignature {
+export interface ButtonListSignature {
   // The arguments accepted by the component
   Args: {
-    item: ListItemObject
+    title: string;
+    items: ListItemObject[];
+    listClasses: string;
   };
   // Any blocks yielded by the component
   Blocks: {
@@ -14,8 +16,8 @@ export interface ListItemSignature {
   Element: null;
 }
 
-export default class ListItem extends Component<ListItemSignature> {
-  foo() {
-    return 1 + 1;
+export default class ButtonList extends Component<ButtonListSignature> {
+  fullListClasses() {
+    return 'button-list '  + this.args.listClasses;
   }
 }
